@@ -39,7 +39,6 @@ permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _zpages/design/
-  [vendor]
 
 collections:
   zpages:
