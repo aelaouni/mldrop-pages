@@ -25,6 +25,9 @@ Our machine converges quite fast but starts over-training right after the 5th Ep
 ##### Video example of the ground truth vs ML(U,V) advection:
 ![ocean current](../assets/images/video_uv.gif)
 
+
+***
+
 SSH
 -------------
 
@@ -40,6 +43,9 @@ We run our experiment for a total of 20 epochs, and the image below shows the ev
 
 ##### Video example of the ground truth vs ML(ssh) advection:
 ![ocean current](../assets/images/video_ssh.gif)
+
+
+***
 
 SST and SSH
 -------------
@@ -62,6 +68,8 @@ We run our experiment for a total of 20 epochs, and the image below shows the ev
 Visually, combining SST and SSH seems to miss-up with the machine ( due to different order of magnitude --> standardize SST)
 
 
+***
+
 SST (t,t+1)
 -------------
 
@@ -80,6 +88,9 @@ The results are slightly better than the one above(sst,ssh) and are far better f
 ##### Video example of the ground truth vs ML(sst(t,t+1)) advection:
 ![ocean current](../assets/images/video_sst.gif)
 
+
+***
+
 Standardized SST (t,t+1)
 -------------
 
@@ -92,6 +103,8 @@ We run our experiment for a total of 20 epochs, and the image below shows the ev
 ##### Video example of the ground truth vs ML(Std(sst[t,t+1])) advection:
 ![ocean current](../assets/images/video_ssst.gif)
 
+
+***
 
 SSH and  standardized SST 
 -------------
