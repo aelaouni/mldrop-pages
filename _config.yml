@@ -42,6 +42,7 @@ exclude:
 
 collections:
   zpages:
+  zzcode:
     output: true
     permalink: /:collection/:path/
 
