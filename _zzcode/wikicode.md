@@ -17,7 +17,7 @@ Before starting, you will need to install the following packages, preferably on 
 
 >[Torchvision](https://github.com/pytorch/vision)
 
->[netcdf4](https://unidata.github.io/netcdf4-python/)
+>[Netcdf4](https://unidata.github.io/netcdf4-python/)
 
 ***
 
