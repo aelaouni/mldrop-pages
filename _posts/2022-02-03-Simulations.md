@@ -119,3 +119,11 @@ We run our experiment for a total of 20 epochs, and the image below shows the ev
 
 
 
+
+***
+
+Intercomparison
+-------------
+
+Sorry but (U,V) ruined pretty much everything! I will try to find a way for a nicer plot.
+![ocean current](../assets/images/evalal.png)
