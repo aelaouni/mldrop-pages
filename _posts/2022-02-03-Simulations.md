@@ -125,5 +125,10 @@ We run our experiment for a total of 20 epochs, and the image below shows the ev
 Intercomparison
 -------------
 
-Sorry but (U,V) ruined pretty much everything! I will try to find a way for a nicer plot.
+Sorry but (U,V) ruined pretty much everything! **Jump this and use the interactive plot (Select/Unselect variable)**
 ![ocean current](../assets/images/evalal.png)
+
+
+{% include train.html %}
+
+{% include eval.html %}

@@ -52,6 +52,3 @@ destination:      ./_site
 incremental:      false
 regenerate:       true
 
-plugins:
-  - jekyll-feed
-  - jemoji
