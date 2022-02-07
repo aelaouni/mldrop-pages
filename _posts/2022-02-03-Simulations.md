@@ -25,6 +25,7 @@ Our machine converges quite fast but starts over-training right after the 5th Ep
 ##### Video example of the ground truth vs ML(U,V) advection:
 ![ocean current](../assets/images/video_uv.gif)
 
+The densities are too intense!
 
 ***
 
@@ -117,6 +118,7 @@ We run our experiment for a total of 20 epochs, and the image below shows the ev
 ##### Video example of the ground truth vs ML(Std(sst), ssh) advection:
 ![ocean current](../assets/images/video_ssstssh.gif)
 
+Well now that both SST an SSH are around the same range, it looks okay, therefore the difference between ssh/sst ranges was the issue!
 
 
 
