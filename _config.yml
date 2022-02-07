@@ -40,7 +40,6 @@ permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _zpages/design/
-  - _zzcode/comments
 
 
 collections:
