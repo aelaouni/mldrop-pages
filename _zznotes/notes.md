@@ -76,7 +76,14 @@ Averaging all the 10.000 samples of density maps look like this:
 
 -------
 
-{% include comments.html %}
 
 
 [[1]](https://arxiv.org/pdf/1505.04597v1.pdf) Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional networks for biomedical image segmentation." International Conference on Medical image computing and computer-assisted intervention. Springer, Cham, 2015.
+
+
+
+
+------
+
+###### Your comments are welcomed here:
+{% include comments.html %}
