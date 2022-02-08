@@ -52,7 +52,7 @@ class UNet(nn.Module):
         return logits
 ```
 
-With``` n_channels=3, n_classes=1```, a simplification of this architecture is shown in the following figure
+With``` n_channels=3, n_classes=1```, a visualization of this architecture is shown in the following figure
 ![ocean current](../../assets/images/Unet_arch.png)
 
 
@@ -68,11 +68,15 @@ This is one of the reasons to explain the fast learning rate we have in our simu
 
 # Back to data
 
-Averaging all the 10.000 samples of density maps look like this:
+Averaging all the 10.000x13 images of density maps look like this:
 
 ![ocean current](../../assets/images/meandens.png)
 
 + This could also be one of the reason to converge quite fast. Although we have quite a large domain, most of the actions do happen in a very specific area!
+
+Also we can evaluate these densities at each time step of the 3-days advection, the following video shows the average of the 10.000 samples at each 6-hours time step.
+![ocean current](../../assets/images/mdens.gif)
+
 
 -------
 
