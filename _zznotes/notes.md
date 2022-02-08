@@ -85,5 +85,5 @@ Averaging all the 10.000 samples of density maps look like this:
 
 ------
 
-###### Your comments are welcomed here (you need a github account for that):
+###### Your comments are welcomed here
 {% include comments.html %}
