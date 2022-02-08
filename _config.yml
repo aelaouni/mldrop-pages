@@ -13,6 +13,7 @@ url:              'https://aelaouni.github.io/'
 baseurl:          '/mldrop-pages'
 rss:              RSS
 
+
 toc:
   enabled: true
   h_min: 1
@@ -47,8 +48,15 @@ collections:
   zzcode:
     output: true
     permalink: /:collection/:path/
+  zznotes:
+    output: true
+    permalink: /:collection/:path/
 
 destination:      ./_site
 incremental:      false
 regenerate:       true
 
+repository: aelaouni/mldrop-pages
+
+comments:
+  provider: "giscus"
