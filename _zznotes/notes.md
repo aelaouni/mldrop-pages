@@ -67,7 +67,7 @@ This is one of the reasons to explain the fast learning rate we have in our simu
 -------
 # Number of parameters
 
-````
+```
 +-------------------------------------------+------------+
 |                  Modules                  | Parameters |
 +-------------------------------------------+------------+
@@ -148,7 +148,7 @@ This is one of the reasons to explain the fast learning rate we have in our simu
 +-------------------------------------------+------------+
 Total Trainable Params: 17267393
 
-````
+```
 
 
 -------
@@ -163,6 +163,11 @@ Averaging all the 10.000x13 images of density maps look like this:
 Also we can evaluate these densities at each time step of the 3-days advection, the following video shows the average of the 10.000 samples at each 6-hours time step.
 ![ocean current](../../assets/images/mdens.gif)
 
+
+My takes from this are:
+
++ Looks like we are only learning diffusion-like advection  
++ Maybe we can use backward advection lo lean convergence?
 
 -------
 
