@@ -65,7 +65,93 @@ This is one of the reasons to explain the fast learning rate we have in our simu
 
 
 -------
+# Number of parameters
 
+````
++-------------------------------------------+------------+
+|                  Modules                  | Parameters |
++-------------------------------------------+------------+
+|          inc.double_conv.0.weight         |    1728    |
+|           inc.double_conv.0.bias          |     64     |
+|          inc.double_conv.1.weight         |     64     |
+|           inc.double_conv.1.bias          |     64     |
+|          inc.double_conv.3.weight         |   36864    |
+|           inc.double_conv.3.bias          |     64     |
+|          inc.double_conv.4.weight         |     64     |
+|           inc.double_conv.4.bias          |     64     |
+| down1.maxpool_conv.1.double_conv.0.weight |   73728    |
+|  down1.maxpool_conv.1.double_conv.0.bias  |    128     |
+| down1.maxpool_conv.1.double_conv.1.weight |    128     |
+|  down1.maxpool_conv.1.double_conv.1.bias  |    128     |
+| down1.maxpool_conv.1.double_conv.3.weight |   147456   |
+|  down1.maxpool_conv.1.double_conv.3.bias  |    128     |
+| down1.maxpool_conv.1.double_conv.4.weight |    128     |
+|  down1.maxpool_conv.1.double_conv.4.bias  |    128     |
+| down2.maxpool_conv.1.double_conv.0.weight |   294912   |
+|  down2.maxpool_conv.1.double_conv.0.bias  |    256     |
+| down2.maxpool_conv.1.double_conv.1.weight |    256     |
+|  down2.maxpool_conv.1.double_conv.1.bias  |    256     |
+| down2.maxpool_conv.1.double_conv.3.weight |   589824   |
+|  down2.maxpool_conv.1.double_conv.3.bias  |    256     |
+| down2.maxpool_conv.1.double_conv.4.weight |    256     |
+|  down2.maxpool_conv.1.double_conv.4.bias  |    256     |
+| down3.maxpool_conv.1.double_conv.0.weight |  1179648   |
+|  down3.maxpool_conv.1.double_conv.0.bias  |    512     |
+| down3.maxpool_conv.1.double_conv.1.weight |    512     |
+|  down3.maxpool_conv.1.double_conv.1.bias  |    512     |
+| down3.maxpool_conv.1.double_conv.3.weight |  2359296   |
+|  down3.maxpool_conv.1.double_conv.3.bias  |    512     |
+| down3.maxpool_conv.1.double_conv.4.weight |    512     |
+|  down3.maxpool_conv.1.double_conv.4.bias  |    512     |
+| down4.maxpool_conv.1.double_conv.0.weight |  2359296   |
+|  down4.maxpool_conv.1.double_conv.0.bias  |    512     |
+| down4.maxpool_conv.1.double_conv.1.weight |    512     |
+|  down4.maxpool_conv.1.double_conv.1.bias  |    512     |
+| down4.maxpool_conv.1.double_conv.3.weight |  2359296   |
+|  down4.maxpool_conv.1.double_conv.3.bias  |    512     |
+| down4.maxpool_conv.1.double_conv.4.weight |    512     |
+|  down4.maxpool_conv.1.double_conv.4.bias  |    512     |
+|       up1.conv.double_conv.0.weight       |  4718592   |
+|        up1.conv.double_conv.0.bias        |    512     |
+|       up1.conv.double_conv.1.weight       |    512     |
+|        up1.conv.double_conv.1.bias        |    512     |
+|       up1.conv.double_conv.3.weight       |  1179648   |
+|        up1.conv.double_conv.3.bias        |    256     |
+|       up1.conv.double_conv.4.weight       |    256     |
+|        up1.conv.double_conv.4.bias        |    256     |
+|       up2.conv.double_conv.0.weight       |  1179648   |
+|        up2.conv.double_conv.0.bias        |    256     |
+|       up2.conv.double_conv.1.weight       |    256     |
+|        up2.conv.double_conv.1.bias        |    256     |
+|       up2.conv.double_conv.3.weight       |   294912   |
+|        up2.conv.double_conv.3.bias        |    128     |
+|       up2.conv.double_conv.4.weight       |    128     |
+|        up2.conv.double_conv.4.bias        |    128     |
+|       up3.conv.double_conv.0.weight       |   294912   |
+|        up3.conv.double_conv.0.bias        |    128     |
+|       up3.conv.double_conv.1.weight       |    128     |
+|        up3.conv.double_conv.1.bias        |    128     |
+|       up3.conv.double_conv.3.weight       |   73728    |
+|        up3.conv.double_conv.3.bias        |     64     |
+|       up3.conv.double_conv.4.weight       |     64     |
+|        up3.conv.double_conv.4.bias        |     64     |
+|       up4.conv.double_conv.0.weight       |   73728    |
+|        up4.conv.double_conv.0.bias        |     64     |
+|       up4.conv.double_conv.1.weight       |     64     |
+|        up4.conv.double_conv.1.bias        |     64     |
+|       up4.conv.double_conv.3.weight       |   36864    |
+|        up4.conv.double_conv.3.bias        |     64     |
+|       up4.conv.double_conv.4.weight       |     64     |
+|        up4.conv.double_conv.4.bias        |     64     |
+|              outc.conv.weight             |     64     |
+|               outc.conv.bias              |     1      |
++-------------------------------------------+------------+
+Total Trainable Params: 17267393
+
+````
+
+
+-------
 # Back to data
 
 Averaging all the 10.000x13 images of density maps look like this:
