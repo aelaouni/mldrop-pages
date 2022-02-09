@@ -40,11 +40,13 @@ markdown_ext:     markdown,mkdown,mkdn,mkd,md
 permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
-  - _zpages/design/
+  - _zzpages/design/
 
 
 collections:
-  zpages:
+  zzpages:
+    output: true
+    permalink: /:collection/:path/
   zzcode:
     output: true
     permalink: /:collection/:path/
