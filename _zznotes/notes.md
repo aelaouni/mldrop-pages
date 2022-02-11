@@ -203,7 +203,7 @@ Two things to take from this experiments:
 
 ###### Architecture
 
-Maybe a ```SingleConv``` instead of ```DoubleConv``` in case we keep Unet.
+Maybe a ```SingleConv``` instead of ```DoubleConv``` in case we keep Unet as a first step? 
 
 
 -------
