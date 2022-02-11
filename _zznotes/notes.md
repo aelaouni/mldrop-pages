@@ -152,6 +152,7 @@ Total Trainable Params: 17267393
 
 
 -------
+
 # Back to data
 
 Averaging all the 10.000x13 images of density maps look like this:
@@ -168,6 +169,42 @@ My takes from this are:
 
 + Looks like we are only learning diffusion-like advection  
 + Maybe we can use backward advection lo lean convergence?
+
+
+-------
+# Changing arch or input data?
+
+I played a bit with the data and generated few input of converging flows to check whether we learn this information of not:
+
+![ocean current](../../assets/images/reverse.gif)
+
+Two things to take from this experiments:
+
+1. Learning position is more or less fine in both direction of time.
+2. Intensity is not that good, we learn more about divergence than convergence. (--> add conservation of )
+
+
+
+
+###### Ideas on making more diverse data
+
+
+
+- Generate few data along attracting and repelling LCSs to learn strong convergence/divergence:
+
+<img src="../../assets/images/lcs.jpeg" alt="drawing" width="500"/>
+
+- Also initialize densities along hyperbolic points, such points correspond to areas with strong mixing activity: fluid is advected here along a compression line and then dispersed away along the stretching line:
+
+<img src="../../assets/images/hyppoint.png" alt="drawing" width="200"/>
+
+- Maybe withing coherent eddies (where the densities should remain more or less the same).
+- Maybe sink flow, add W? 
+
+###### Architecture
+
+Maybe a ```SingleConv``` instead of ```DoubleConv``` in case we keep Unet.
+
 
 -------
 
