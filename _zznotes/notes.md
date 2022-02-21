@@ -257,6 +257,7 @@ We reduce the number of parameter to 41%, that is twice smaller than the previou
 
 ![ocean current](../../assets/images/single.gif)
 
+It does work, we learn patterns, intensity and so on, but there is a weird thing were the densities are more or less divided by two?
 
 -------
 
