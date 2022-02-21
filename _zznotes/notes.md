@@ -205,6 +205,58 @@ Two things to take from this experiments:
 
 Maybe a ```SingleConv``` instead of ```DoubleConv``` in case we keep Unet as a first step? 
 
+```
++-------------------------------------------+------------+
+|                  Modules                  | Parameters |
++-------------------------------------------+------------+
+|          inc.single_conv.0.weight         |    1728    |
+|           inc.single_conv.0.bias          |     64     |
+|          inc.single_conv.1.weight         |     64     |
+|           inc.single_conv.1.bias          |     64     |
+| down1.maxpool_conv.1.single_conv.0.weight |   73728    |
+|  down1.maxpool_conv.1.single_conv.0.bias  |    128     |
+| down1.maxpool_conv.1.single_conv.1.weight |    128     |
+|  down1.maxpool_conv.1.single_conv.1.bias  |    128     |
+| down2.maxpool_conv.1.single_conv.0.weight |   294912   |
+|  down2.maxpool_conv.1.single_conv.0.bias  |    256     |
+| down2.maxpool_conv.1.single_conv.1.weight |    256     |
+|  down2.maxpool_conv.1.single_conv.1.bias  |    256     |
+| down3.maxpool_conv.1.single_conv.0.weight |  1179648   |
+|  down3.maxpool_conv.1.single_conv.0.bias  |    512     |
+| down3.maxpool_conv.1.single_conv.1.weight |    512     |
+|  down3.maxpool_conv.1.single_conv.1.bias  |    512     |
+| down4.maxpool_conv.1.single_conv.0.weight |  2359296   |
+|  down4.maxpool_conv.1.single_conv.0.bias  |    512     |
+| down4.maxpool_conv.1.single_conv.1.weight |    512     |
+|  down4.maxpool_conv.1.single_conv.1.bias  |    512     |
+|       up1.conv.single_conv.0.weight       |  2359296   |
+|        up1.conv.single_conv.0.bias        |    256     |
+|       up1.conv.single_conv.1.weight       |    256     |
+|        up1.conv.single_conv.1.bias        |    256     |
+|       up2.conv.single_conv.0.weight       |   589824   |
+|        up2.conv.single_conv.0.bias        |    128     |
+|       up2.conv.single_conv.1.weight       |    128     |
+|        up2.conv.single_conv.1.bias        |    128     |
+|       up3.conv.single_conv.0.weight       |   147456   |
+|        up3.conv.single_conv.0.bias        |     64     |
+|       up3.conv.single_conv.1.weight       |     64     |
+|        up3.conv.single_conv.1.bias        |     64     |
+|       up4.conv.single_conv.0.weight       |   73728    |
+|        up4.conv.single_conv.0.bias        |     64     |
+|       up4.conv.single_conv.1.weight       |     64     |
+|        up4.conv.single_conv.1.bias        |     64     |
+|              outc.conv.weight             |     64     |
+|               outc.conv.bias              |     1      |
++-------------------------------------------+------------+
+Total Trainable Params: 7085633
+
+```
+
+We reduce the number of parameter to 41%, that is twice smaller than the previous model 
+
+
+![ocean current](../../assets/images/single.gif)
+
 
 -------
 
