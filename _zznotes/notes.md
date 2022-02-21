@@ -259,6 +259,8 @@ We reduce the number of parameter to 41%, that is twice smaller than the previou
 
 It does work, we learn patterns, intensity and so on, but there is a weird thing were the densities are more or less divided by two?
 
+If we really decided to use a different architecture, then we should drop off the Unet arch and maybe use a basic conv model.
+
 -------
 
 
