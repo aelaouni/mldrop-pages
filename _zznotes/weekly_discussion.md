@@ -203,3 +203,6 @@ Comparisons between batches
 
 ####### Comparison between all simulations above
 ![ocean current](../../assets/images/com_resnet_all.png)
+
+###### Your comments are welcomed here
+{% include comments.html %}
