@@ -1,5 +1,5 @@
 ---
-title: Weekly discussion (Mars 07)
+title: Weekly discussion (March 07)
 author: Anass El Aouni
 date: 2022-02-04
 category: mldroppage
