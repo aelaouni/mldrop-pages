@@ -15,7 +15,7 @@ layout: post
 * [x] Normalize maps between 0~1
 * [x] Compare to Unet (same config 100 samples)
 * [x] Increase to x5 with ResNet
-* [ ] propose new norms
+* [ ] Discuss new norms
 * [x] Why initial batch errors are not the same everywhere? Weights are initialized randomly each time)
 * [x] Where are compared to Toulon config?: 10.000 samples of 30-day trajectories (Number of simple is similar to what we had before)
 
