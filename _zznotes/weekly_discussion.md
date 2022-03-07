@@ -19,6 +19,8 @@ layout: post
 * [x] Why initial batch errors are not the same everywhere? Weights are initialized randomly each time)
 * [x] Where are compared to Toulon config?: 10.000 samples of 30-day trajectories (Number of simple is similar to what we had before)
 
+-------
+
 
 # Simulation 1
 
@@ -163,6 +165,7 @@ Comparisons between batches
 
 
 
+-------
 
 # Simulation 2
 
@@ -201,7 +204,10 @@ Comparisons between batches
 ![ocean current](../../assets/images/res500_2.png)
 
 
-####### Comparison between all simulations above
+-------
+
+###### Comparison between all simulations above
+
 ![ocean current](../../assets/images/com_resnet_all.png)
 
 ###### Your comments are welcomed here
